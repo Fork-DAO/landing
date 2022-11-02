@@ -1,4 +1,5 @@
 import { Center, Flex, Image, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -11,11 +12,9 @@ export default function Header() {
         py={1}
       >
         <Center>
-          <a href="/">
-            <Text fontSize="3xl" fontWeight="bold">
-              Fork DAO
-            </Text>
-          </a>
+          <Text fontSize="3xl" fontWeight="bold">
+            <Link href="/">Fork DAO</Link>
+          </Text>
         </Center>
         <Center px="5">
           <a href="https://twitter.com/elfork_eth">

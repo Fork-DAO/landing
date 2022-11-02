@@ -53,10 +53,10 @@ export default function AboutUs({ language }) {
 
       <p>
         <Text fontSize="xl" color="white" py={5}>
-          So.. "Fork" is because every open protocol can get a potential fork if
-          it don't match users expectatives. It's not good, but we want to be
-          there to learn and explode all the benefits of this emerging
-          ecosystem.
+          So.. &quot;Fork&quot; is because every open protocol can get a
+          potential fork if it don&apos;t match users expectatives. It&apos;s
+          not good, but we want to be there to learn and explode all the
+          benefits of this emerging ecosystem.
         </Text>
       </p>
     </Box>
