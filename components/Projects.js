@@ -1,11 +1,9 @@
-import { Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
-export default function Projects() {
+export default function Projects({ language }) {
   return (
-    <>
-      <Text fontSize="xl" color="white">
-        Biri Biri - Projects
-      </Text>
-    </>
+    <Box py={10} px={50} height="100vh">
+      Projects - to be defined
+    </Box>
   );
 }

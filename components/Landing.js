@@ -8,7 +8,7 @@ export default function Landing({ onLanguageSelected }) {
       alignItems="center"
       width="100vw"
       height="100vh"
-      bg="black"
+      bgGradient="linear(to-br, #1f514e, #709c81)"
     >
       <Grid>
         <Image src="/forkdao-logo.png" />

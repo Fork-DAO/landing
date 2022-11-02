@@ -1,15 +1,14 @@
-import { Box, Center, Flex, Image, Text } from "@chakra-ui/react";
-import { ABOUT_US, ROADMAP, PROJECTS, RESOURCES } from "../wording/wording";
+import { Center, Flex, Image, Text } from "@chakra-ui/react";
 
-export default function Header({ language }) {
+export default function Header() {
   return (
     <header>
       <Flex
         justifyContent="space-between"
-        bg="#1e935c"
+        bgGradient="linear(to-br, teal.600, green.500)"
         color="white"
-        px={10}
-        py={6}
+        px={5}
+        py={1}
       >
         <Center>
           <a href="/">
@@ -18,31 +17,13 @@ export default function Header({ language }) {
             </Text>
           </a>
         </Center>
-        <Flex direction="vertical">
-          <a href="/about-us">
-            <Box fontSize="xl" fontWeight="bold" px="2" py="2" rounded="lg">
-              {ABOUT_US[language]}
-            </Box>
+        <Center px="5">
+          <a href="https://twitter.com/elfork_eth">
+            <Image src="/twitter-logo.svg" boxSize="20px" margin="2px" />
           </a>
-          <a href="/roadmap">
-            <Box fontSize="xl" fontWeight="bold" px="2" py="2" rounded="lg">
-              {ROADMAP[language]}
-            </Box>
+          <a href="https://t.me/forkdaoes">
+            <Image src="/telegram-logo.svg" boxSize="20px" margin="2px" />
           </a>
-          <a href="/projects">
-            <Box fontSize="xl" fontWeight="bold" px="2" py="2" rounded="lg">
-              {PROJECTS[language]}
-            </Box>
-          </a>
-          <a href="/resources">
-            <Box fontSize="xl" fontWeight="bold" px="2" py="2" rounded="lg">
-              {RESOURCES[language]}
-            </Box>
-          </a>
-        </Flex>
-        <Center>
-          <Image src="/twitter-logo.svg" boxSize="20px" margin="2px" />
-          <Image src="/telegram-logo.svg" boxSize="20px" margin="2px" />
         </Center>
       </Flex>
     </header>
