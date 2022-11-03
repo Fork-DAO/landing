@@ -18,10 +18,15 @@ export default function Header() {
         </Center>
         <Center px="5">
           <a href="https://twitter.com/elfork_eth">
-            <Image src="/twitter-logo.svg" boxSize="20px" margin="2px" />
+            <Image src="/twitter-logo.svg" alt="" boxSize="20px" margin="2px" />
           </a>
           <a href="https://t.me/forkdaoes">
-            <Image src="/telegram-logo.svg" boxSize="20px" margin="2px" />
+            <Image
+              src="/telegram-logo.svg"
+              alt=""
+              boxSize="20px"
+              margin="2px"
+            />
           </a>
         </Center>
       </Flex>
