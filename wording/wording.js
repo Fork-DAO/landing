@@ -34,8 +34,8 @@ const ROADMAP_IN_PROGRESS_STATUS = {
 };
 
 const PROTOCOL_RELATIONSHIPS = {
-  en: "Relaciones con otros protocolos",
-  es: "Relaciones con otros protocolos",
+  en: "Relationship",
+  es: "Relaciones",
 };
 
 const TWITTER_SPACES = {

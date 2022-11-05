@@ -3,8 +3,10 @@ import { Box, Image, Text, Link, Tooltip } from "@chakra-ui/react";
 
 export default function Polygon({ language }) {
   return (
-    <Box py={2}>
-      <Image rounded="xl" boxSize="100px" src="/polygon.png" alt=""></Image>
+    <Box py={4}>
+      <Tooltip label="Polygon" placement="top">
+        <Image rounded="xl" boxSize="100px" src="/polygon.png" alt=""></Image>
+      </Tooltip>
       <Box py={2} />
       <p>
         <Text align="center" fontSize="l" as="b">

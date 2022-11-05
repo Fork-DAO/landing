@@ -1,4 +1,4 @@
-import { Grid, GridItem, Box, Text, Link } from "@chakra-ui/react";
+import { Grid, GridItem, Box } from "@chakra-ui/react";
 import Polygon from "./resources/Polygon";
 import Gnosis from "./resources/Gnosis";
 
@@ -9,7 +9,7 @@ export default function Resources({ language }) {
         <GridItem
           w="80%"
           h="100%"
-          background="#38ab7c17"
+          background="#d9b33e17"
           boxShadow="darklg"
           rounded="md"
         >
@@ -18,7 +18,7 @@ export default function Resources({ language }) {
         <GridItem
           w="80%"
           h="100%"
-          background="#38ab7c17"
+          background="#d9b33e17"
           boxShadow="darklg"
           rounded="md"
         >

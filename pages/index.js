@@ -23,6 +23,7 @@ export default function Index() {
     <>
       <Head>
         <title>Fork DAO</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
       {language !== undefined ? (
         <Flex direction="column" width="100vw">
@@ -41,7 +42,7 @@ export default function Index() {
                   fontSize="xl"
                   fontWeight="bold"
                   my={1}
-                  _selected={{ color: "#37ab7c" }}
+                  _selected={{ color: "#FFC000" }}
                 >
                   {ABOUT_US[language]}
                 </Tab>
@@ -49,7 +50,7 @@ export default function Index() {
                   fontSize="xl"
                   fontWeight="bold"
                   my={1}
-                  _selected={{ color: "#37ab7c" }}
+                  _selected={{ color: "#FFC000" }}
                 >
                   {ROADMAP[language]}
                 </Tab>
@@ -57,7 +58,7 @@ export default function Index() {
                   fontSize="xl"
                   fontWeight="bold"
                   my={1}
-                  _selected={{ color: "#37ab7c" }}
+                  _selected={{ color: "#FFC000" }}
                 >
                   {PROJECTS[language]}
                 </Tab>
@@ -65,7 +66,7 @@ export default function Index() {
                   fontSize="xl"
                   fontWeight="bold"
                   my={1}
-                  _selected={{ color: "#37ab7c" }}
+                  _selected={{ color: "#FFC000" }}
                 >
                   {RESOURCES[language]}
                 </Tab>

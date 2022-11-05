@@ -1,4 +1,4 @@
-import { Text, Box, Link } from "@chakra-ui/react";
+import { Text, Box, Link, Grid, GridItem } from "@chakra-ui/react";
 import {
   EXAMPLES,
   ROADMAP_ANALYSIS_STATUS,
@@ -29,174 +29,243 @@ import {
 
 export default function Roadmap({ language }) {
   return (
-    <Box py={10} px={50} align="left">
+    <Box py={10} px={50} weight="100vw">
       <p>
-        <Text fontSize="3xl" color="white" as="b">
+        <Text fontSize="3xl" color="#FFC000" as="b" align="center">
           Q4 - 2022
         </Text>
       </p>
+      <Grid
+        templateColumns="repeat(2, 1fr)"
+        gap={6}
+        borderBottom="2px"
+        pt={2}
+        pb={5}
+      >
+        <GridItem
+          w="100%"
+          h="100%"
+          background="#d9b33e17"
+          boxShadow="darklg"
+          rounded="md"
+        >
+          <Box>
+            <p>
+              <Text fontSize="xl" color="#FFC000" px={4} as="b">
+                {PROTOCOL_RELATIONSHIPS[language]} - {TWITTER_SPACES[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} as="i">
+                {ROADMAP_IN_PROGRESS_STATUS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} align="left">
+                {TWITTER_SPACES_DESCRIPTION[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} pb={2} align="left">
+                {EXAMPLES[language]}{" "}
+                <Link href="https://ubi.eth.limo/">UBI,</Link>{" "}
+                <Link href="https://prode.eth.limo/">Prode,</Link>{" "}
+                <Link href="https://www.lens.xyz/">Lens,</Link>{" "}
+                <Link href="https://proofofhumanity.id/">
+                  Proof of Humanity,
+                </Link>{" "}
+                <Link href="https://yubiai.market/">Yubiai</Link>.
+              </Text>
+            </p>
+          </Box>
+        </GridItem>
+        <GridItem
+          w="100%"
+          h="100%"
+          background="#d9b33e17"
+          boxShadow="darklg"
+          rounded="md"
+        >
+          <Box>
+            <p>
+              <Text fontSize="xl" color="#FFC000" px={4} as="b">
+                {COMMUNITY[language]}: {FORK_RADIO[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} as="i">
+                {ROADMAP_IN_PROGRESS_STATUS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} pb={2} align="left">
+                {FORK_RADIO_DESCRIPTION[language]}
+              </Text>
+            </p>
+          </Box>
+        </GridItem>
+        <GridItem
+          w="100%"
+          h="100%"
+          background="#d9b33e17"
+          boxShadow="darklg"
+          rounded="md"
+        >
+          <Box>
+            <p>
+              <Text py={1}></Text>
+              <Text fontSize="xl" color="#FFC000" px={4} as="b">
+                {COMMUNITY[language]} - {GOVERNANCE[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} as="i">
+                {ROADMAP_ANALYSIS_STATUS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} pb={2} align="left">
+                {GOVERNANCE_DESCRIPTION[language]}
+              </Text>
+            </p>
+          </Box>
+        </GridItem>
+        <GridItem
+          w="100%"
+          h="100%"
+          background="#d9b33e17"
+          boxShadow="darklg"
+          rounded="md"
+        >
+          <Box>
+            <p>
+              <Text py={1}></Text>
+              <Text fontSize="xl" color="#FFC000" px={4} as="b">
+                {COMMUNITY[language]} - {WHITEPAPER[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} as="i">
+                {ROADMAP_IN_PROGRESS_STATUS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} pb={2} align="left">
+                {WHITEPAPER_DESCRIPTION[language]}
+              </Text>
+            </p>
+          </Box>
+        </GridItem>
+        <GridItem
+          w="100%"
+          h="100%"
+          background="#d9b33e17"
+          boxShadow="darklg"
+          rounded="md"
+        >
+          <Box>
+            <p>
+              <Text py={1}></Text>
+              <Text fontSize="xl" color="#FFC000" px={4} as="b">
+                {TECHNICAL[language]} - {GOVERNOR_SMART_CONTRACT[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} as="i">
+                {ROADMAP_COMPLETED_STATUS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} align="left">
+                {GOVERNOR_SMART_CONTRACT_DESCRIPTION[language]}
+              </Text>
+            </p>
+          </Box>
+        </GridItem>
+        <GridItem
+          w="100%"
+          h="100%"
+          background="#d9b33e17"
+          boxShadow="darklg"
+          rounded="md"
+        >
+          <Box>
+            <p>
+              <Text fontSize="xl" color="#FFC000" px={4} as="b">
+                {TECHNICAL[language]} - {DESCENTRALIZED_FORUM[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} as="i">
+                {ROADMAP_ANALYSIS_STATUS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} align="left">
+                {DESCENTRALIZED_FORUM_DESCRIPTION[language]}
+              </Text>
+            </p>
+          </Box>
+        </GridItem>
+      </Grid>
+
       <p>
-        <Text fontSize="2xl" color="white">
-          {"->"} {PROTOCOL_RELATIONSHIPS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="b">
-          {TWITTER_SPACES[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="i">
-          {ROADMAP_IN_PROGRESS_STATUS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {TWITTER_SPACES_DESCRIPTION[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {EXAMPLES[language]} <Link href="https://ubi.eth.limo/">UBI,</Link>{" "}
-          <Link href="https://prode.eth.limo/">Prode,</Link>{" "}
-          <Link href="https://www.lens.xyz/">Lens,</Link>{" "}
-          <Link href="https://proofofhumanity.id/">Proof of Humanity,</Link>{" "}
-          <Link href="https://yubiai.market/">Yubiai</Link>.
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="2xl" color="white">
-          {"->"} {COMMUNITY[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="b">
-          {FORK_RADIO[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="i">
-          {ROADMAP_IN_PROGRESS_STATUS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {FORK_RADIO_DESCRIPTION[language]}
-        </Text>
-      </p>
-      <p>
-        <Text py={1}></Text>
-        <Text fontSize="xl" color="white" px={4} as="b">
-          {WHITEPAPER[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="i">
-          {ROADMAP_IN_PROGRESS_STATUS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {WHITEPAPER_DESCRIPTION[language]}
-        </Text>
-      </p>
-      <p>
-        <Text py={1}></Text>
-        <Text fontSize="xl" color="white" px={4} as="b">
-          {GOVERNANCE[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="i">
-          {ROADMAP_ANALYSIS_STATUS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {GOVERNANCE_DESCRIPTION[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="2xl" color="white">
-          {"->"} {TECHNICAL[language]}
-        </Text>
-      </p>
-      <p>
-        <Text py={1}></Text>
-        <Text fontSize="xl" color="white" px={4} as="b">
-          {GOVERNOR_SMART_CONTRACT[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="i">
-          {ROADMAP_COMPLETED_STATUS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {GOVERNOR_SMART_CONTRACT_DESCRIPTION[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="b">
-          {DESCENTRALIZED_FORUM[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="i">
-          {ROADMAP_ANALYSIS_STATUS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {DESCENTRALIZED_FORUM_DESCRIPTION[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="3xl" color="white" as="b">
+        <Text fontSize="3xl" color="#FFC000" as="b" align="center">
           Q1 - 2023
         </Text>
       </p>
-      <p>
-        <Text fontSize="2xl" color="white">
-          {"->"} {FUNDING[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="b">
-          {GRANTS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="i">
-          {ROADMAP_TO_DO_STATUS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {GRANTS_DESCRIPTION[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="2xl" color="white">
-          {"->"} {TECHNICAL[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="b">
-          {DEVELOPMENT[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} as="i">
-          {ROADMAP_TO_DO_STATUS[language]}
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white" px={4} align="justify">
-          {DEVELOPMENT_DESCRIPTION[language]}
-        </Text>
-      </p>
+      <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+        <GridItem
+          w="100%"
+          h="100%"
+          background="#d9b33e17"
+          boxShadow="darklg"
+          rounded="md"
+        >
+          <Box>
+            <p>
+              <Text fontSize="xl" color="#FFC000" px={4} as="b">
+                {FUNDING[language]} - {GRANTS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} as="i">
+                {ROADMAP_TO_DO_STATUS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} align="left">
+                {GRANTS_DESCRIPTION[language]}
+              </Text>
+            </p>
+          </Box>
+        </GridItem>
+        <GridItem
+          w="100%"
+          h="100%"
+          background="#d9b33e17"
+          boxShadow="darklg"
+          rounded="md"
+        >
+          <Box>
+            <p>
+              <Text fontSize="xl" color="#FFC000" px={4} as="b">
+                {TECHNICAL[language]} - {DEVELOPMENT[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} as="i">
+                {ROADMAP_TO_DO_STATUS[language]}
+              </Text>
+            </p>
+            <p>
+              <Text fontSize="xl" color="white" px={4} align="left">
+                {DEVELOPMENT_DESCRIPTION[language]}
+              </Text>
+            </p>
+          </Box>
+        </GridItem>
+      </Grid>
     </Box>
   );
 }

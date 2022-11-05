@@ -6,19 +6,31 @@ export default function Header() {
     <header>
       <Flex
         justifyContent="space-between"
-        bgGradient="linear(to-br, teal.600, green.500)"
+        bg="black"
         color="white"
         px={5}
         py={1}
       >
         <Center>
-          <Text fontSize="3xl" fontWeight="bold">
-            <Link href="/">Fork DAO</Link>
-          </Text>
+          <Link href="/">
+            <Image
+              src="/logo-nuevo-7.png"
+              pt={2}
+              alt=""
+              width="100"
+              height="39"
+            />
+          </Link>
         </Center>
         <Center px="5">
           <a href="https://twitter.com/elfork_eth">
-            <Image src="/twitter-logo.svg" alt="" boxSize="20px" margin="2px" />
+            <Image
+              src="/twitter-logo.svg"
+              alt=""
+              boxSize="20px"
+              margin="2px"
+              colo="white"
+            />
           </a>
           <a href="https://t.me/forkdaoes">
             <Image

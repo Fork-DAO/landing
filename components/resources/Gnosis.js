@@ -3,8 +3,11 @@ import { Box, Image, Text, Link, Tooltip } from "@chakra-ui/react";
 
 export default function Gnosis({ language }) {
   return (
-    <Box py={2}>
-      <Image rounded="xl" boxSize="100px" src="/gnosis.png" alt=""></Image>
+    <Box py={4}>
+      <Tooltip label="Gnosis Chain" placement="top">
+        <Image rounded="xl" boxSize="100px" src="/gnosis.png" alt=""></Image>
+      </Tooltip>
+
       <Box py={2} />
       <p>
         <Text align="center" fontSize="l" as="b">

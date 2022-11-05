@@ -7,10 +7,10 @@ export default function Landing({ onLanguageSelected }) {
       alignItems="center"
       width="100vw"
       height="100vh"
-      bgGradient="linear(to-br, #1f514e, #709c81)"
+      bgGradient="linear(to-br, #000000, #5a535c)"
     >
       <Grid>
-        <Image src="/forkdao-logo.png" alt="" />
+        <Image src="/logo-nuevo-7.png" alt="" width="400px" />
         <Flex py="5" justifyContent="center" alignItems="center" fontSize="6xl">
           <Box px="5">
             <a href="#" onClick={() => onLanguageSelected("es")}>
