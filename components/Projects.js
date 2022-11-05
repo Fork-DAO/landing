@@ -14,7 +14,7 @@ export default function Projects({ language }) {
           boxShadow="darklg"
           rounded="md"
         >
-          <TwitterSpaces />
+          <TwitterSpaces language={language} />
         </GridItem>
         <GridItem
           w="100%"
@@ -23,7 +23,7 @@ export default function Projects({ language }) {
           boxShadow="darklg"
           rounded="md"
         >
-          <MultisigLens />
+          <MultisigLens language={language} />
         </GridItem>
         <GridItem
           w="100%"
@@ -32,7 +32,7 @@ export default function Projects({ language }) {
           boxShadow="darklg"
           rounded="md"
         >
-          <VotingExperiments />
+          <VotingExperiments language={language} />
         </GridItem>
       </Grid>
     </Box>

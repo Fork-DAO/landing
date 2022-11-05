@@ -13,7 +13,7 @@ export default function Resources({ language }) {
           boxShadow="darklg"
           rounded="md"
         >
-          <Polygon />
+          <Polygon language={language} />
         </GridItem>
         <GridItem
           w="80%"
@@ -22,7 +22,7 @@ export default function Resources({ language }) {
           boxShadow="darklg"
           rounded="md"
         >
-          <Gnosis />
+          <Gnosis language={language} />
         </GridItem>
       </Grid>
     </Box>

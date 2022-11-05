@@ -1,5 +1,6 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Box, Image, Text, Link, Tooltip } from "@chakra-ui/react";
+import { MULTISIG_TREASURY } from "../../wording/wording";
 
 export default function Gnosis({ language }) {
   return (
@@ -11,7 +12,7 @@ export default function Gnosis({ language }) {
       <Box py={2} />
       <p>
         <Text align="center" fontSize="l" as="b">
-          💵 Tesorería - Multisig{" "}
+          💵 {MULTISIG_TREASURY[language]}{" "}
           <Tooltip label="View on Gnosisscan">
             <Link href="https://gnosisscan.io/address/0x2393AFAdAC5476ab21133033793cF02a725BEdE2">
               <ExternalLinkIcon />

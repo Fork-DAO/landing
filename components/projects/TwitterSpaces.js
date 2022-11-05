@@ -1,4 +1,5 @@
 import { Box, Text, Link } from "@chakra-ui/react";
+import { AVAILABLE_IN } from "../../wording/wording";
 
 export default function Projects({ language }) {
   return (
@@ -18,13 +19,13 @@ export default function Projects({ language }) {
       ></iframe> */}
 
       <Text align="left" fontSize="md" pt={10} pl={3}>
-        Disponible en{" "}
+        {AVAILABLE_IN[language]}{" "}
         {
           <Link
             color="#ffcb2c"
             href="https://open.spotify.com/show/2f7JpdcrBqKXxCTsQAMn1q"
           >
-            Spotify
+            Spotify.
           </Link>
         }
       </Text>
