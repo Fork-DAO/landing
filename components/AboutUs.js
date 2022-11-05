@@ -26,7 +26,7 @@ export default function AboutUs({ language }) {
           </p>
 
           <p>
-            <Text fontSize="2xl" color="#FFF000" pt={5} align="left">
+            <Text fontSize="2xl" color="#FFC000" pt={5} align="left">
               {FORK_MAIN_VALUES[language]}
             </Text>
           </p>
@@ -43,7 +43,7 @@ export default function AboutUs({ language }) {
         </GridItem>
         <GridItem w="100%" h="100%">
           <p>
-            <Text fontSize="2xl" color="#FFF000" py={2} as="b">
+            <Text fontSize="2xl" color="#FFC000" py={2} as="b">
               {WHY_FORK[language]}
             </Text>
           </p>
@@ -64,7 +64,7 @@ export default function AboutUs({ language }) {
 
       <Box pt={7}>
         <p>
-          <Text fontSize="3xl" color="#FFF000" as="b">
+          <Text fontSize="3xl" color="#FFC000" as="b">
             {THATS_OUR_FORK[language]}
           </Text>
         </p>
