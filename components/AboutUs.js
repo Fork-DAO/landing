@@ -1,64 +1,74 @@
-import { Text, Box } from "@chakra-ui/react";
+import { Text, Box, Grid, GridItem } from "@chakra-ui/react";
+import {
+  EVERY_PROTOCOL_NEEDS,
+  FORK_ESTABLISHING,
+  FORK_INTERACTION,
+  FORK_MAIN_VALUES,
+  SOFTWARE_FORK,
+  THATS_OUR_FORK,
+  WHY_FORK,
+} from "../wording/wording";
 
 export default function AboutUs({ language }) {
   return (
-    <Box py={10} px={50} height="100vh">
-      <p>
-        <Text fontSize="xl" color="white">
-          Fork DAO is establishing itself as a web3 aggregator.
-        </Text>
-      </p>
-      <p>
-        <Text fontSize="xl" color="white">
-          We currently interact, play, learn and challenge procolos such as PoH,
-          Kleros, UBI, Lens, Prode, among others.
-        </Text>
-      </p>
+    <Box py={10} px={25} height="100vh" weight="100vw">
+      <Grid templateColumns="repeat(2, 1fr)" gap={10}>
+        <GridItem w="100%" h="100%">
+          <p>
+            <Text fontSize="xl" color="white" align="left">
+              {FORK_ESTABLISHING[language]}
+            </Text>
+          </p>
+          <p>
+            <Text fontSize="xl" color="white" align="left">
+              {FORK_INTERACTION[language]}
+            </Text>
+          </p>
 
-      <p>
-        <Text fontSize="2xl" color="white" py={5}>
-          Joy, integrations and decentralization are our main values.
-        </Text>
-      </p>
+          <p>
+            <Text fontSize="2xl" color="#FFF000" pt={5} align="left">
+              {FORK_MAIN_VALUES[language]}
+            </Text>
+          </p>
+        </GridItem>
+        <GridItem w="100%" h="100%" position="relative">
+          <Box position="absolute" top="40%">
+            IMAGEN FACHERA QUE COMBINE LOGOS DE ESTOS PROTOCOLOS.
+          </Box>
+        </GridItem>
+        <GridItem w="100%" h="100%" position="relative">
+          <Box position="absolute" top="50%">
+            IMAGEN FACHERA de un fork.
+          </Box>
+        </GridItem>
+        <GridItem w="100%" h="100%">
+          <p>
+            <Text fontSize="2xl" color="#FFF000" py={2} as="b">
+              {WHY_FORK[language]}
+            </Text>
+          </p>
 
-      <p>
-        <Text fontSize="2xl" color="white" py={5}>
-          Why Fork?
-        </Text>
-      </p>
+          <p>
+            <Text fontSize="xl" color="white" py={5} align="left">
+              {SOFTWARE_FORK[language]}
+            </Text>
+          </p>
 
-      <p>
-        <Text fontSize="xl" color="white" py={5}>
-          In software, we often hear about a fork as a way to take some system
-          and adapt, transform or improve some things at your please.
-        </Text>
-      </p>
+          <p>
+            <Text fontSize="xl" color="white" py={2} align="left">
+              {EVERY_PROTOCOL_NEEDS[language]}
+            </Text>
+          </p>
+        </GridItem>
+      </Grid>
 
-      <p>
-        <Text fontSize="xl" color="white" py={5}>
-          Our community has born in that way. It all started with a Proof Of
-          Humanity telegram channel fork. It was just about communication. Now
-          we try to learn and challenge any protocol that we use as users and
-          consumers.
-        </Text>
-      </p>
-
-      <p>
-        <Text fontSize="xl" color="white" py={5}>
-          Every protocol in web3 needs an end user. And the end user need a
-          public square where he/she can meet with his equals and fight for
-          better features and environments.
-        </Text>
-      </p>
-
-      <p>
-        <Text fontSize="xl" color="white" py={5}>
-          So.. &quot;Fork&quot; is because every open protocol can get a
-          potential fork if it don&apos;t match users expectatives. It&apos;s
-          not good, but we want to be there to learn and explode all the
-          benefits of this emerging ecosystem.
-        </Text>
-      </p>
+      <Box pt={7}>
+        <p>
+          <Text fontSize="3xl" color="#FFF000" as="b">
+            {THATS_OUR_FORK[language]}
+          </Text>
+        </p>
+      </Box>
     </Box>
   );
 }

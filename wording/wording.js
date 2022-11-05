@@ -218,7 +218,49 @@ const MULTISIG_CM_RESOURCE = {
   es: "Community Management Multisig",
 };
 
+const FORK_ESTABLISHING = {
+  en: "Fork DAO is establishing itself as a web3 aggregator.",
+  es: "Fork DAO se está estableciendo como un agregador web3.",
+};
+
+const FORK_INTERACTION = {
+  en: "We currently interact, play, learn and challenge procolos such as PoH, Kleros, UBI, Lens, Sismo, Audius, Prode, among others.",
+  es: "Acutalmente interactuamos, jugamos, aprendemos y desafiamos protocolos como Proof of Humanity, Kleros, UBI, Lens, Sismo, Prode (entre otros).",
+};
+
+const FORK_MAIN_VALUES = {
+  en: "Joy, integrations and decentralization are our main values.",
+  es: "Nuestros principales valores son la diversión, las integraciones y la descentralización.",
+};
+
+const WHY_FORK = {
+  en: "Why Fork?",
+  es: "¿Por qué Fork?",
+};
+
+const SOFTWARE_FORK = {
+  en: "In software, a fork is a way to take some system and adapt or transform it at your please. Our community was born in that sense. It all started with a Proof Of Humanity Telegram channel fork. It was just about communication at first. But... now?",
+  es: "En software, un fork es una forma de tomar algún sistema y adaptarlo o transformarlo. Nuestra comunidad nació de esa manera: todo comenzó con un fork de un canal de telegram de Proof of Humanity. Al principio sólo se traba de la comunicación. Pero... ahora?",
+};
+
+const EVERY_PROTOCOL_NEEDS = {
+  en: "Every wee3 protocol needs an end user. And the end user needs a public square to meet his/her equals and fight for better features and environments.",
+  es: "Todo protocolo web3 necesita un usuario final. Y el usuario final necesita una plaza pública para reunirse con sus iguales y luchar por mejores funcionalidades y ambientes.",
+};
+
+const THATS_OUR_FORK = {
+  en: "Well, that's our Fork...",
+  es: "Bueno, ese es nuestro Fork...",
+};
+
 export {
+  THATS_OUR_FORK,
+  EVERY_PROTOCOL_NEEDS,
+  SOFTWARE_FORK,
+  WHY_FORK,
+  FORK_MAIN_VALUES,
+  FORK_INTERACTION,
+  FORK_ESTABLISHING,
   MULTISIG_CM_RESOURCE,
   MULTISIG_TREASURY,
   RESEARCH,
