@@ -5,9 +5,9 @@ import Gnosis from "./resources/Gnosis";
 export default function Resources({ language }) {
   return (
     <Box py={10} px={25} height="100vh" weight="100vw">
-      <Grid templateColumns="repeat(2, 1fr)" gap={1}>
+      <Grid templateColumns="repeat(2, 1fr)" gap={10}>
         <GridItem
-          w="80%"
+          w="100%"
           h="100%"
           background="#d9b33e17"
           boxShadow="darklg"
@@ -16,7 +16,7 @@ export default function Resources({ language }) {
           <Polygon language={language} />
         </GridItem>
         <GridItem
-          w="80%"
+          w="100%"
           h="100%"
           background="#d9b33e17"
           boxShadow="darklg"

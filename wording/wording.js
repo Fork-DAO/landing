@@ -1,6 +1,6 @@
 const ABOUT_US = {
   en: "About us",
-  es: "¿Quienes somos?",
+  es: "¿Quiénes somos?",
 };
 
 const ROADMAP = {
