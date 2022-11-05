@@ -4,7 +4,7 @@ import Q42022 from "./roadmap/Q42022";
 
 export default function Roadmap({ language }) {
   return (
-    <Box py={10} px={50} weight="100vw">
+    <Box px={50} weight="100vw">
       <Q42022 language={language} />
       <Q12023 language={language} />
     </Box>

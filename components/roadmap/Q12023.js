@@ -30,16 +30,16 @@ export default function Q12023({ language }) {
             <Text py={1}></Text>
             <p>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">
-                {FUNDING[language]} - {GRANTS[language]}
+                {FUNDING[language]}: {GRANTS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} as="i">
+              <Text fontSize="lg" color="white" px={4} as="i">
                 {ROADMAP_TO_DO_STATUS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} align="left">
+              <Text fontSize="md" color="white" px={4} align="left">
                 {GRANTS_DESCRIPTION[language]}
               </Text>
             </p>
@@ -56,16 +56,16 @@ export default function Q12023({ language }) {
             <Text py={1}></Text>
             <p>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">
-                {TECHNICAL[language]} - {DEVELOPMENT[language]}
+                {TECHNICAL[language]}: {DEVELOPMENT[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} as="i">
+              <Text fontSize="lg" color="white" px={4} as="i">
                 {ROADMAP_TO_DO_STATUS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} align="left">
+              <Text fontSize="md" color="white" px={4} align="left">
                 {DEVELOPMENT_DESCRIPTION[language]}
               </Text>
             </p>

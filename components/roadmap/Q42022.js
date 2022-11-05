@@ -47,21 +47,21 @@ export default function Q42022({ language }) {
             <Text py={1}></Text>
             <p>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">
-                {PROTOCOL_RELATIONSHIPS[language]} - {TWITTER_SPACES[language]}
+                {PROTOCOL_RELATIONSHIPS[language]}: {TWITTER_SPACES[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} as="i">
+              <Text fontSize="lg" color="white" px={4} as="i">
                 {ROADMAP_IN_PROGRESS_STATUS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} align="left">
+              <Text fontSize="md" color="white" px={4} align="left">
                 {TWITTER_SPACES_DESCRIPTION[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} pb={2} align="left">
+              <Text fontSize="md" color="white" px={4} pb={2} align="left">
                 {EXAMPLES[language]}{" "}
                 <Link href="https://ubi.eth.limo/">UBI,</Link>{" "}
                 <Link href="https://prode.eth.limo/">Prode,</Link>{" "}
@@ -89,12 +89,12 @@ export default function Q42022({ language }) {
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} as="i">
+              <Text fontSize="lg" color="white" px={4} as="i">
                 {ROADMAP_IN_PROGRESS_STATUS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} pb={2} align="left">
+              <Text fontSize="md" color="white" px={4} pb={2} align="left">
                 {FORK_RADIO_DESCRIPTION[language]}
               </Text>
             </p>
@@ -111,16 +111,16 @@ export default function Q42022({ language }) {
             <p>
               <Text py={1}></Text>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">
-                {COMMUNITY[language]} - {GOVERNANCE[language]}
+                {COMMUNITY[language]}: {GOVERNANCE[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} as="i">
+              <Text fontSize="lg" color="white" px={4} as="i">
                 {ROADMAP_ANALYSIS_STATUS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} pb={2} align="left">
+              <Text fontSize="md" color="white" px={4} pb={2} align="left">
                 {GOVERNANCE_DESCRIPTION[language]}
               </Text>
             </p>
@@ -137,16 +137,16 @@ export default function Q42022({ language }) {
             <p>
               <Text py={1}></Text>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">
-                {COMMUNITY[language]} - {WHITEPAPER[language]}
+                {COMMUNITY[language]}: {WHITEPAPER[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} as="i">
+              <Text fontSize="lg" color="white" px={4} as="i">
                 {ROADMAP_IN_PROGRESS_STATUS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} pt={10} align="left">
+              <Text fontSize="md" color="white" px={4} pt={10} align="left">
                 {WHITEPAPER_DESCRIPTION[language]}
               </Text>
             </p>
@@ -163,16 +163,16 @@ export default function Q42022({ language }) {
             <p>
               <Text py={1}></Text>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">
-                {TECHNICAL[language]} - {GOVERNOR_SMART_CONTRACT[language]}
+                {TECHNICAL[language]}: {GOVERNOR_SMART_CONTRACT[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} as="i">
+              <Text fontSize="lg" color="white" px={4} as="i">
                 {ROADMAP_COMPLETED_STATUS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} align="left">
+              <Text fontSize="md" color="white" px={4} align="left">
                 {GOVERNOR_SMART_CONTRACT_DESCRIPTION[language]}
               </Text>
             </p>
@@ -189,16 +189,16 @@ export default function Q42022({ language }) {
             <Text py={1}></Text>
             <p>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">
-                {TECHNICAL[language]} - {DESCENTRALIZED_FORUM[language]}
+                {TECHNICAL[language]}: {DESCENTRALIZED_FORUM[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} as="i">
+              <Text fontSize="lg" color="white" px={4} as="i">
                 {ROADMAP_ANALYSIS_STATUS[language]}
               </Text>
             </p>
             <p>
-              <Text fontSize="xl" color="white" px={4} align="left">
+              <Text fontSize="md" color="white" px={4} align="left">
                 {DESCENTRALIZED_FORUM_DESCRIPTION[language]}
               </Text>
             </p>
