@@ -1,7 +1,7 @@
 import { Grid, GridItem, Box, Text, Link } from "@chakra-ui/react";
-import TwitterSpaces from "./projects/TwitterSpaces";
-import MultisigLens from "./projects/MultisigLens";
-import VotingExperiments from "./projects/VotingExperiments";
+import TwitterSpaces from "./TwitterSpaces";
+import MultisigLens from "./MultisigLens";
+import VotingExperiments from "./VotingExperiments";
 
 export default function Projects({ language }) {
   return (

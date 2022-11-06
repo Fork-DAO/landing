@@ -7,18 +7,27 @@ import {
   TabPanel,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 import { ABOUT_US, ROADMAP, PROJECTS, RESOURCES } from "../wording/wording";
 import AboutUs from "../components/AboutUs";
-import Roadmap from "../components/Roadmap";
-import Projects from "../components/Projects";
-import Resources from "../components/Resources";
+import Roadmap from "../components/roadmap/Roadmap";
+import Projects from "../components/projects/Projects";
+import Resources from "../components/resources/Resources";
 import BodyContainer from "../components/BodyContainer";
+import ResourcesMobile from "../components/resources/ResourcesMobile";
+import ProjectsMobile from "../components/projects/ProjectsMobile";
+import RoadmapMobile from "../components/roadmap/RoadmapMobile";
 
 export default function Index() {
   const [language, setLanguage] = useState();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 769);
+  }, []);
+
   return (
     <>
       <Head>
@@ -26,7 +35,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       {language !== undefined ? (
-        <Flex direction="column" width="100vw">
+        <Flex direction="column" w={["20vw", "50vw", "100vw"]}>
           <Header />
           <BodyContainer>
             <Tabs
@@ -76,13 +85,25 @@ export default function Index() {
                   <AboutUs language={language} />
                 </TabPanel>
                 <TabPanel>
-                  <Roadmap language={language} />
+                  {isMobile ? (
+                    <RoadmapMobile language={language} />
+                  ) : (
+                    <Roadmap language={language} />
+                  )}
                 </TabPanel>
                 <TabPanel>
-                  <Projects language={language} />
+                  {isMobile ? (
+                    <ProjectsMobile language={language} />
+                  ) : (
+                    <Projects language={language} />
+                  )}
                 </TabPanel>
                 <TabPanel>
-                  <Resources language={language} />
+                  {isMobile ? (
+                    <ResourcesMobile language={language} />
+                  ) : (
+                    <Resources language={language} />
+                  )}
                 </TabPanel>
               </TabPanels>
             </Tabs>

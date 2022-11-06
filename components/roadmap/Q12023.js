@@ -9,7 +9,7 @@ import {
   DEVELOPMENT_DESCRIPTION,
 } from "../../wording/wording";
 
-export default function Q12023({ language }) {
+export default function Q12023({ isMobile, language }) {
   return (
     <Box>
       <p>
@@ -17,7 +17,12 @@ export default function Q12023({ language }) {
           Q1 - 2023
         </Text>
       </p>
-      <Grid templateColumns="repeat(2, 1fr)" gap={6} pt={2} pb={5}>
+      <Grid
+        templateColumns={isMobile ? "repeat(1, 1fr)" : "repeat(2, 1fr)"}
+        gap={6}
+        pt={2}
+        pb={5}
+      >
         <GridItem
           w="100%"
           h="100%"
@@ -52,7 +57,7 @@ export default function Q12023({ language }) {
           boxShadow="darklg"
           rounded="md"
         >
-          <Box>
+          <Box pb={2}>
             <Text py={1}></Text>
             <p>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">

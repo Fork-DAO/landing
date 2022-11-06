@@ -21,7 +21,7 @@ import {
   DESCENTRALIZED_FORUM_DESCRIPTION,
 } from "../../wording/wording";
 
-export default function Q42022({ language }) {
+export default function Q42022({ isMobile, language }) {
   return (
     <Box>
       <p>
@@ -30,7 +30,7 @@ export default function Q42022({ language }) {
         </Text>
       </p>
       <Grid
-        templateColumns="repeat(2, 1fr)"
+        templateColumns={isMobile ? "repeat(1, 1fr)" : "repeat(2, 1fr)"}
         gap={6}
         borderBottom="2px"
         pt={2}
@@ -133,7 +133,7 @@ export default function Q42022({ language }) {
           boxShadow="darklg"
           rounded="md"
         >
-          <Box>
+          <Box pb={2}>
             <p>
               <Text py={1}></Text>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">
@@ -159,7 +159,7 @@ export default function Q42022({ language }) {
           boxShadow="darklg"
           rounded="md"
         >
-          <Box>
+          <Box pb={2}>
             <p>
               <Text py={1}></Text>
               <Text fontSize="xl" color="#FFC000" px={4} as="b">

@@ -1,11 +1,11 @@
 import { Grid, GridItem, Box } from "@chakra-ui/react";
-import Polygon from "./resources/Polygon";
-import Gnosis from "./resources/Gnosis";
-import Mainnet from "./resources/Mainnet";
+import Polygon from "./Polygon";
+import Gnosis from "./Gnosis";
+import Mainnet from "./Mainnet";
 
 export default function Resources({ language }) {
   return (
-    <Box py={10} px={25} height="100vh" weight="100vw">
+    <Box py={10} px={25} height="100vh" w={["10vw", "100vw", "100vw"]}>
       <Grid templateColumns="repeat(3, 1fr)" gap={10}>
         <GridItem
           w="100%"

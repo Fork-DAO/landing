@@ -5,12 +5,12 @@ export default function Landing({ onLanguageSelected }) {
     <Flex
       justifyContent="center"
       alignItems="center"
-      width="100vw"
+      w="100vw"
       height="100vh"
       bgGradient="linear(to-br, #000000, #5a535c)"
     >
       <Grid>
-        <Image src="/logo-nuevo-7.png" alt="" width="400px" />
+        <Image src="/logo-nuevo-7.png" alt="" w={["300px", "350px", "400px"]} />
         <Flex py="5" justifyContent="center" alignItems="center" fontSize="6xl">
           <Box px="5">
             <a href="#" onClick={() => onLanguageSelected("es")}>

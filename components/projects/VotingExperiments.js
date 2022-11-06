@@ -10,7 +10,7 @@ import {
 
 export default function Projects({ language }) {
   return (
-    <Box pt={2}>
+    <Box pt={2} pb={2}>
       <Text align="center" fontSize="xl" as="b" color="#FFC000">
         {VOTING_EXPERIMENTS[language]}
       </Text>

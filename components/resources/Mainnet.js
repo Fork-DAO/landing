@@ -1,9 +1,6 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Box, Image, Text, Link, Tooltip } from "@chakra-ui/react";
-import {
-  MULTISIG_TREASURY,
-  POLY_MULTISIG_RESOURCE,
-} from "../../wording/wording";
+import { MULTISIG_TREASURY } from "../../wording/wording";
 
 export default function Mainnet({ language }) {
   return (

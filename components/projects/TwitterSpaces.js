@@ -1,9 +1,9 @@
 import { Box, Text, Link } from "@chakra-ui/react";
 import { AVAILABLE_IN } from "../../wording/wording";
 
-export default function Projects({ language }) {
+export default function TwitterSpaces({ language }) {
   return (
-    <Box pt={2}>
+    <Box pt={2} pb={4}>
       <Text align="center" fontSize="xl" as="b" color="#FFC000">
         Twitter Spaces
       </Text>
