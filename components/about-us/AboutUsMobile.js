@@ -72,10 +72,9 @@ export default function AboutUsMobile({ language }) {
             </Text>
           </p>
         </GridItem>
-        <GridItem w="100%" h="100%" position="relative">
-          <Box position="absolute" top="50%">
-            IMAGEN FACHERA de un fork.
-          </Box>
+        <GridItem w="100%" h="100%">
+          {/* <Image src="/bannerfork.png" alt="" /> */}
+          *Imagen del green day*
         </GridItem>
       </Grid>
 

@@ -6,7 +6,6 @@ import {
   Image,
   Flex,
   Spacer,
-  Center,
 } from "@chakra-ui/react";
 import {
   EVERY_PROTOCOL_NEEDS,
@@ -53,10 +52,9 @@ export default function AboutUs({ language }) {
             <Image src="/logoprodefork.png" alt="" w="15%" h="15%" />
           </Flex>
         </GridItem>
-        <GridItem w="100%" h="100%" position="relative">
-          <Box position="absolute" top="50%">
-            IMAGEN FACHERA de un fork.
-          </Box>
+        <GridItem w="100%" h="100%" alignItems="center" display="flex">
+          {/* <Image src="/bannerfork.png" alt="" /> */}
+          *Imagen del green day*
         </GridItem>
         <GridItem w="100%" h="100%">
           <p>
