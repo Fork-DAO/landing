@@ -5,7 +5,7 @@ import Mainnet from "./Mainnet";
 
 export default function ResourcesMobile({ language }) {
   return (
-    <Box>
+    <Box h="100vh">
       <Grid templateColumns="repeat(1, 1fr)" gap={10}>
         <GridItem background="#d9b33e17" boxShadow="darklg" rounded="md">
           <Mainnet language={language} />

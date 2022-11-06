@@ -42,15 +42,15 @@ export default function AboutUs({ language }) {
         </GridItem>
         <GridItem w="100%" h="100%" alignItems="center" display="flex">
           <Flex gap={1}>
-            <Image src="/logopohfork.png" alt="" w="20%" h="20%" />
+            <Image src="/logopohfork.png" alt="" w="15%" h="15%" />
             <Spacer />
-            <Image src="/logoklerosfork.png" alt="" w="20%" h="20%" />
+            <Image src="/logoklerosfork.png" alt="" w="15%" h="15%" />
             <Spacer />
-            <Image src="/logoubifork.png" alt="" w="20%" h="20%" />
+            <Image src="/logoubifork.png" alt="" w="15%" h="15%" />
             <Spacer />
-            <Image src="/logolensfork.png" alt="" w="20%" h="20%" />
+            <Image src="/logolensfork.png" alt="" w="15%" h="15%" />
             <Spacer />
-            <Image src="/logoprodefork.png" alt="" w="20%" h="20%" />
+            <Image src="/logoprodefork.png" alt="" w="15%" h="15%" />
           </Flex>
         </GridItem>
         <GridItem w="100%" h="100%" position="relative">

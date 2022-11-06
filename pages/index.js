@@ -5,6 +5,7 @@ import {
   Tab,
   TabPanels,
   TabPanel,
+  Box,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState, useEffect } from "react";
@@ -20,6 +21,7 @@ import ResourcesMobile from "../components/resources/ResourcesMobile";
 import ProjectsMobile from "../components/projects/ProjectsMobile";
 import RoadmapMobile from "../components/roadmap/RoadmapMobile";
 import AboutUsMobile from "../components/about-us/AboutUsMobile";
+import HeaderMobile from "../components/HeaderMobile";
 
 export default function Index() {
   const [language, setLanguage] = useState();
@@ -37,51 +39,53 @@ export default function Index() {
       </Head>
       {language !== undefined ? (
         <Flex direction="column" w="100vw">
-          <Header />
+          {isMobile ? <HeaderMobile /> : <Header />}
           <BodyContainer>
             <Tabs
-              align="center"
+              align={isMobile ? "left" : "center"}
               width="100vw"
               justifyContent="space-between"
               color="white"
-              px={8}
+              px={isMobile ? 0 : 8}
               py={1}
             >
-              <TabList>
-                <Tab
-                  fontSize="xl"
-                  fontWeight="bold"
-                  my={1}
-                  _selected={{ color: "#FFC000" }}
-                >
-                  {ABOUT_US[language]}
-                </Tab>
-                <Tab
-                  fontSize="xl"
-                  fontWeight="bold"
-                  my={1}
-                  _selected={{ color: "#FFC000" }}
-                >
-                  {ROADMAP[language]}
-                </Tab>
-                <Tab
-                  fontSize="xl"
-                  fontWeight="bold"
-                  my={1}
-                  _selected={{ color: "#FFC000" }}
-                >
-                  {PROJECTS[language]}
-                </Tab>
-                <Tab
-                  fontSize="xl"
-                  fontWeight="bold"
-                  my={1}
-                  _selected={{ color: "#FFC000" }}
-                >
-                  {RESOURCES[language]}
-                </Tab>
-              </TabList>
-              <TabPanels>
+              <Box overflow="scroll">
+                <TabList>
+                  <Tab
+                    fontSize="xl"
+                    fontWeight="bold"
+                    my={1}
+                    _selected={{ color: "#FFC000" }}
+                  >
+                    {ABOUT_US[language]}
+                  </Tab>
+                  <Tab
+                    fontSize="xl"
+                    fontWeight="bold"
+                    my={1}
+                    _selected={{ color: "#FFC000" }}
+                  >
+                    {ROADMAP[language]}
+                  </Tab>
+                  <Tab
+                    fontSize="xl"
+                    fontWeight="bold"
+                    my={1}
+                    _selected={{ color: "#FFC000" }}
+                  >
+                    {PROJECTS[language]}
+                  </Tab>
+                  <Tab
+                    fontSize="xl"
+                    fontWeight="bold"
+                    my={1}
+                    _selected={{ color: "#FFC000" }}
+                  >
+                    {RESOURCES[language]}
+                  </Tab>
+                </TabList>
+              </Box>
+              <TabPanels align="center">
                 <TabPanel>
                   {isMobile ? (
                     <AboutUsMobile language={language} />
