@@ -6,7 +6,6 @@ import {
   Image,
   Flex,
   Spacer,
-  Center,
 } from "@chakra-ui/react";
 import {
   EVERY_PROTOCOL_NEEDS,

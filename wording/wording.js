@@ -249,8 +249,8 @@ const EVERY_PROTOCOL_NEEDS = {
 };
 
 const THATS_OUR_FORK = {
-  en: "Well, that's our Fork...",
-  es: "Bueno, ese es nuestro Fork...",
+  en: "That's our Fork...",
+  es: "Ese es nuestro Fork...",
 };
 
 export {

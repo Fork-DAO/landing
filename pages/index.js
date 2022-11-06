@@ -36,7 +36,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       {language !== undefined ? (
-        <Flex direction="column" w={["20vw", "50vw", "100vw"]}>
+        <Flex direction="column" w="100vw">
           <Header />
           <BodyContainer>
             <Tabs
