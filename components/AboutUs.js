@@ -40,17 +40,17 @@ export default function AboutUs({ language }) {
             </Text>
           </p>
         </GridItem>
-        <GridItem w="100%" h="100%">
-          <Flex>
-            <Image src="/logopohfork.png" alt="" boxSize={40} />
+        <GridItem w="100%" h="100%" alignItems="center" display="flex">
+          <Flex gap={1}>
+            <Image src="/logopohfork.png" alt="" w="20%" h="20%" />
             <Spacer />
-            <Image src="/logoklerosfork.png" alt="" boxSize={40} />
+            <Image src="/logoklerosfork.png" alt="" w="20%" h="20%" />
             <Spacer />
-            <Image src="/logoubifork.png" alt="" boxSize={40} />
+            <Image src="/logoubifork.png" alt="" w="20%" h="20%" />
             <Spacer />
-            <Image src="/logolensfork.png" alt="" boxSize={40} />
+            <Image src="/logolensfork.png" alt="" w="20%" h="20%" />
             <Spacer />
-            <Image src="/logoprodefork.png" alt="" boxSize={40} />
+            <Image src="/logoprodefork.png" alt="" w="20%" h="20%" />
           </Flex>
         </GridItem>
         <GridItem w="100%" h="100%" position="relative">
