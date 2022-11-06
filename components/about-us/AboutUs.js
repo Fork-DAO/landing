@@ -16,7 +16,7 @@ import {
   SOFTWARE_FORK,
   THATS_OUR_FORK,
   WHY_FORK,
-} from "../wording/wording";
+} from "../../wording/wording";
 
 export default function AboutUs({ language }) {
   return (

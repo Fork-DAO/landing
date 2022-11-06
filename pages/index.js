@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 import { ABOUT_US, ROADMAP, PROJECTS, RESOURCES } from "../wording/wording";
-import AboutUs from "../components/AboutUs";
+import AboutUs from "../components/about-us/AboutUs";
 import Roadmap from "../components/roadmap/Roadmap";
 import Projects from "../components/projects/Projects";
 import Resources from "../components/resources/Resources";
@@ -19,6 +19,7 @@ import BodyContainer from "../components/BodyContainer";
 import ResourcesMobile from "../components/resources/ResourcesMobile";
 import ProjectsMobile from "../components/projects/ProjectsMobile";
 import RoadmapMobile from "../components/roadmap/RoadmapMobile";
+import AboutUsMobile from "../components/about-us/AboutUsMobile";
 
 export default function Index() {
   const [language, setLanguage] = useState();
@@ -82,7 +83,11 @@ export default function Index() {
               </TabList>
               <TabPanels>
                 <TabPanel>
-                  <AboutUs language={language} />
+                  {isMobile ? (
+                    <AboutUsMobile language={language} />
+                  ) : (
+                    <AboutUs language={language} />
+                  )}
                 </TabPanel>
                 <TabPanel>
                   {isMobile ? (
