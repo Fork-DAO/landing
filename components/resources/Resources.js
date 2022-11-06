@@ -5,7 +5,7 @@ import Mainnet from "./Mainnet";
 
 export default function Resources({ language }) {
   return (
-    <Box py={10} px={25} height="100vh" w="100vw">
+    <Box py={10} height="100vh">
       <Grid templateColumns="repeat(3, 1fr)" gap={10}>
         <GridItem
           w="100%"

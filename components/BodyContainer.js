@@ -5,7 +5,7 @@ export default function BodyContainer({ children }) {
     <Flex
       bgGradient="linear(to-br, #000000, #5a535c)"
       width="100vw"
-      py="1"
+      py={1}
       shadow="lg"
       textAlign="justify"
     >
