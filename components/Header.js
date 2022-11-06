@@ -1,7 +1,8 @@
-import { Center, Flex, Image, Text } from "@chakra-ui/react";
-import Link from "next/link";
+import { Center, Flex, Image, Link } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
   return (
     <header>
       <Flex
@@ -19,6 +20,7 @@ export default function Header() {
               alt=""
               width="100"
               height="39"
+              onClick={() => router.reload(window.location.pathname)}
             />
           </Link>
         </Center>

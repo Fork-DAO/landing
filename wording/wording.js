@@ -213,9 +213,9 @@ const MULTISIG_TREASURY = {
   es: "Tesorería Multisig",
 };
 
-const MULTISIG_CM_RESOURCE = {
-  en: "Community Management Multisig",
-  es: "Community Management Multisig",
+const POLY_MULTISIG_RESOURCE = {
+  en: "Treasury & Community Management Multisig",
+  es: "Tesorería & Community Management Multisig",
 };
 
 const FORK_ESTABLISHING = {
@@ -224,8 +224,8 @@ const FORK_ESTABLISHING = {
 };
 
 const FORK_INTERACTION = {
-  en: "We currently interact, play, learn and challenge procolos such as PoH, Kleros, UBI, Lens, Sismo, Audius, Prode, among others.",
-  es: "Acutalmente interactuamos, jugamos, aprendemos y desafiamos protocolos como Proof of Humanity, Kleros, UBI, Lens, Sismo, Prode (entre otros).",
+  en: "We currently interact, play, learn and challenge procolos such as PoH, Kleros, UBI, Lens, Prode, among others.",
+  es: "Actualmente interactuamos, jugamos, aprendemos y desafiamos protocolos como Proof of Humanity, Kleros, UBI, Lens, Prode (entre otros).",
 };
 
 const FORK_MAIN_VALUES = {
@@ -261,7 +261,7 @@ export {
   FORK_MAIN_VALUES,
   FORK_INTERACTION,
   FORK_ESTABLISHING,
-  MULTISIG_CM_RESOURCE,
+  POLY_MULTISIG_RESOURCE,
   MULTISIG_TREASURY,
   RESEARCH,
   POH_DELEGATION,

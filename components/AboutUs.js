@@ -1,4 +1,13 @@
-import { Text, Box, Grid, GridItem } from "@chakra-ui/react";
+import {
+  Text,
+  Box,
+  Grid,
+  GridItem,
+  Image,
+  Flex,
+  Spacer,
+  Center,
+} from "@chakra-ui/react";
 import {
   EVERY_PROTOCOL_NEEDS,
   FORK_ESTABLISHING,
@@ -31,10 +40,18 @@ export default function AboutUs({ language }) {
             </Text>
           </p>
         </GridItem>
-        <GridItem w="100%" h="100%" position="relative">
-          <Box position="absolute" top="40%">
-            IMAGEN FACHERA QUE COMBINE LOGOS DE ESTOS PROTOCOLOS.
-          </Box>
+        <GridItem w="100%" h="100%">
+          <Flex>
+            <Image src="/logopohfork.png" alt="" boxSize={40} />
+            <Spacer />
+            <Image src="/logoklerosfork.png" alt="" boxSize={40} />
+            <Spacer />
+            <Image src="/logoubifork.png" alt="" boxSize={40} />
+            <Spacer />
+            <Image src="/logolensfork.png" alt="" boxSize={40} />
+            <Spacer />
+            <Image src="/logoprodefork.png" alt="" boxSize={40} />
+          </Flex>
         </GridItem>
         <GridItem w="100%" h="100%" position="relative">
           <Box position="absolute" top="50%">
