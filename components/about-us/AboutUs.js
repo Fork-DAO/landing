@@ -19,7 +19,7 @@ import {
 
 export default function AboutUs({ language }) {
   return (
-    <Box py={10} px={25} height="100vh" weight="100vw">
+    <Box py={10} px={25} weight="100vw">
       <Grid templateColumns="repeat(2, 1fr)" gap={10}>
         <GridItem w="100%" h="100%">
           <p>
@@ -53,8 +53,7 @@ export default function AboutUs({ language }) {
           </Flex>
         </GridItem>
         <GridItem w="100%" h="100%" alignItems="center" display="flex">
-          {/* <Image src="/bannerfork.png" alt="" /> */}
-          *Imagen del green day*
+          <Image src="/bannerfork.png" alt="" />
         </GridItem>
         <GridItem w="100%" h="100%">
           <p>

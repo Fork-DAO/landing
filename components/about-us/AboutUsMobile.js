@@ -73,8 +73,7 @@ export default function AboutUsMobile({ language }) {
           </p>
         </GridItem>
         <GridItem w="100%" h="100%">
-          {/* <Image src="/bannerfork.png" alt="" /> */}
-          *Imagen del green day*
+          <Image src="/bannerfork.png" alt="" />
         </GridItem>
       </Grid>
 

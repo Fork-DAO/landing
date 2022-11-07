@@ -49,7 +49,7 @@ export default function Index() {
               px={isMobile ? 0 : 8}
               py={1}
             >
-              <Box overflow="scroll">
+              <Box overflow={isMobile ? "scroll" : "visible"}>
                 <TabList>
                   <Tab
                     fontSize="xl"
