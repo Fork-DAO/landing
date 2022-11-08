@@ -19,7 +19,7 @@ import {
 
 export default function AboutUs({ language }) {
   return (
-    <Box py={10} px={25} weight="100vw">
+    <Box py={10} px={25} weight="100vw" height="100vh">
       <Grid templateColumns="repeat(2, 1fr)" gap={10}>
         <GridItem w="100%" h="100%">
           <p>
