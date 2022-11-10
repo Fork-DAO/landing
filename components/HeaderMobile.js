@@ -16,7 +16,7 @@ export default function HeaderMobile() {
         <Center>
           <Link href="/">
             <Image
-              src="/logo-nuevo-7.png"
+              src="/logoforkdao.png"
               pt={2}
               alt=""
               width="100"

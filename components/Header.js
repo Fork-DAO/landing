@@ -15,7 +15,7 @@ export default function Header() {
         <Center>
           <Link href="/">
             <Image
-              src="/logo-nuevo-7.png"
+              src="/logoforkdao.png"
               pt={2}
               alt=""
               width="100"
@@ -25,7 +25,7 @@ export default function Header() {
           </Link>
         </Center>
         <Center px="5">
-          <a href="https://twitter.com/elfork_eth">
+          <a href="https://twitter.com/forkdaoes">
             <Image
               src="/twitter-logo.svg"
               alt=""
