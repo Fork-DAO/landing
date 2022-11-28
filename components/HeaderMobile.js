@@ -26,8 +26,21 @@ export default function HeaderMobile() {
           </Link>
         </Center>
         <Center>
-          <a href="https://twitter.com/elfork_eth">
-            <Image src="/twitter-logo.svg" alt="" boxSize="20px" margin="2px" />
+          <a href="https://www.instagram.com/fork.dao/">
+            <Image 
+              src="/instagram-logo.svg" 
+              alt="" 
+              boxSize="20px" 
+              margin="4px" 
+            />
+          </a>
+          <a href="https://twitter.com/forkdaoes">
+            <Image 
+              src="/twitter-logo.svg" 
+              alt="" 
+              boxSize="20px" 
+              margin="2px" 
+            />
           </a>
           <a href="https://t.me/forkdaoes">
             <Image

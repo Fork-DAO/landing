@@ -25,6 +25,14 @@ export default function Header() {
           </Link>
         </Center>
         <Center px="5">
+          <a href="https://www.instagram.com/fork.dao/">
+            <Image 
+              src="/instagram-logo.svg" 
+              alt="" 
+              boxSize="20px" 
+              margin="4px" 
+            />
+          </a>
           <a href="https://twitter.com/forkdaoes">
             <Image
               src="/twitter-logo.svg"
