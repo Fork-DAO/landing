@@ -19,7 +19,7 @@ export default function Landing({ onLanguageSelected }) {
           </Box>
           <Box>
             <a href="#" onClick={() => onLanguageSelected("en")}>
-              <Image alt="" src="/uk-flag.png" />
+              <Image alt="" src="https://raw.githubusercontent.com/Fork-DAO/landing/main/public/uk-flag.png" />
             </a>
           </Box>
         </Flex>
