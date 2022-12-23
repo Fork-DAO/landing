@@ -240,7 +240,7 @@ const WHY_FORK = {
 
 const SOFTWARE_FORK = {
   en: "In software, a fork is a way to take some system and adapt or transform it at your please. Our community was born in that sense. It all started with a Proof Of Humanity Telegram channel fork. It was just about communication at first. But... now?",
-  es: "En software, un fork es una forma de tomar algún sistema y adaptarlo o transformarlo. Nuestra comunidad nació de esa manera: todo comenzó con un fork de un canal de telegram de Proof of Humanity. Al principio sólo se traba de la comunicación. Pero... ahora?",
+  es: "En software, un fork es una forma de tomar algún sistema y adaptarlo o transformarlo. Nuestra comunidad nació de esa manera: todo comenzó con un fork de un canal de telegram de Proof of Humanity. Al principio sólo se trataba de la comunicación. Pero... ahora?",
 };
 
 const EVERY_PROTOCOL_NEEDS = {
